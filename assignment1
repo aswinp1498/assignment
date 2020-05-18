@@ -1,0 +1,9 @@
+#1. Write a function that takes a number and returns a list of its digits
+
+
+input_number = ("enter the number")
+c=str(input_number)
+int_list = []
+for i in range(len(c))
+  int_list.append(int(c[i]))
+print(int_list)
