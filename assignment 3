@@ -1,0 +1,20 @@
+str1 = input("enter the string :")
+t = 1
+for i in range(len(str1)):
+    if(str1[i] == ' ' or str1 == '\n' or str1 == '\t'):
+        t = t + 1
+print("total no of words in the string =",t)
+str1=str1.split()
+streven=str1[::2]
+strodd=str1[1::2]
+if(t%2 == 0):
+    str3= [word[::-1] for word in strodd]
+    print(str3)
+    str=str3+streven
+
+else:
+    str2 = [word[::-1] for word in streven]
+    print(str2)
+    str=str2+strodd
+str=' '.join(str)
+print("output:",str)
